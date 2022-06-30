@@ -1,0 +1,21 @@
+ <!-- 159. Fixing Page Reload Issues -->
+ <!-- 163. Passing Dynamic Parameters to Links -->
+<a  style="cursor: pointer; margin-bottom: 1rem;" 
+    routerLinkActive="active"
+    [routerLink]="[indexId]"
+    class="list-group-item clearfix"
+  >
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.discription }}</p>
+  </div>
+  <span class="pull-right">
+    <img
+      [src]="recipe.imagePath"
+      alt="{{ recipe.name }}"
+      class="img-responsive"
+      style="max-height: 50px"
+    />
+  </span>
+</a>
+ 
